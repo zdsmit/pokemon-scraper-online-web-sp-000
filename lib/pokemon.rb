@@ -4,7 +4,7 @@ class Pokemon
   def initialize(id:, name:, type:, db:)
   end
 
-  def self.save(name, value)
+  def self.save(name, type)
     sql = "INSERT INTO pokemon (name, type) VALUES (?, ?)"
     @db.execute(sql, name, type)
   end
