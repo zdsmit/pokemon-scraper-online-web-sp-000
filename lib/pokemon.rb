@@ -4,9 +4,9 @@ class Pokemon
   def initialize(id:, name:, type:, db:)
   end
 
-  def self.save(name, type)
+  def self.save(name, type, db)
     sql = "INSERT INTO pokemon (name, type) VALUES (?, ?)"
-    @db.execute(sql, name, type)
+    db.execute(sql, name, type)
   end
 
   def find
