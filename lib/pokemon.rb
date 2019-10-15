@@ -15,7 +15,7 @@ class Pokemon
       pokemon_id = match[0]
       name = match[1]
       type = match[2]
-      pokemon = Pokemon.new(pokemon_id, name, type, db)
+      pokemon = Pokemon.new(id: pokemon_id, name: name, type: type, db: db)
       pokemon
     end
   end
